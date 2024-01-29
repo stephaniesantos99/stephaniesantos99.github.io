@@ -10,5 +10,8 @@
     "ejs": "^3.1.8",
     "express": "~4.16.1",
     "nodemon": "^2.0.20"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
   }
 }
