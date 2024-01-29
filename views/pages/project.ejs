@@ -1,0 +1,40 @@
+<!-- Stephanie Santos | 301348833 | 01.27.2024 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('../partials/head'); %>
+  </head>
+  <body class="container">
+    <header><%- include('../partials/header'); %></header>
+
+    <main>
+      <!-- Projects -->
+      <div class="container mx-auto text-center mt-5">
+        <p class="p-4 fs-1 text-primary">Projects</p>
+
+        <% content.forEach((project, index) => { %>
+          <div class="card mb-4">
+            <div class="row g-0">
+              <div class="col-md-6">
+                <img src="<%= project.screenShotUrl %>" alt="<%= project.name %>" class="img-fluid rounded" />
+              </div>
+              <div class="col-md-6">
+                <div class="card-body">
+                  <h5 class="card-title"><%= project.name %></h5>
+                  <p class="card-text"><%= project.description %></p>
+                  <p class="card-text"><%= project.details %></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <% if (index < projectsContent.length - 1) { %>
+            <hr />
+          <% } %>
+        <% }); %>
+      </div>
+    </main>
+
+    <footer><%- include('../partials/footer'); %></footer>
+  </body>
+</html>

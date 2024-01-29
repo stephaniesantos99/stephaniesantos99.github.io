@@ -1,0 +1,25 @@
+/* Stephanie Santos | 301348833 | 01.27.2024 */
+body {
+
+    background: linear-gradient(90deg, #1d0410 0%, #c2d4f3 100%); 
+    a:hover{
+        color: red;
+    }
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        width: 40%;
+      }
+      
+      .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+      }
+      
+      .container {
+        padding: 2px 16px;
+      }
+}
+/* .container {
+    background-color: #cd5f96;
+    color:#cd5f96;
+} */

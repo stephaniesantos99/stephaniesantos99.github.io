@@ -1,0 +1,52 @@
+<!-- Stephanie Santos | 301348833 | 01.27.2024 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('../partials/head'); %>
+</head>
+<body class="container">
+  <header><%- include('../partials/header'); %></header>
+
+  <main>
+    <div class="container mt-5">
+      <h1 class="text-center">Contact Me</h1>
+
+      <section class="my-5">
+
+        <p class="text-center mb-5"><h2>Don't hesitate to contact me should you have any inquiries or need further assistance!</h2></p>
+
+        <div class="row">
+          <div class="col-md-6 mx-auto">
+            <form id="contact-form" name="contact-form" method="POST">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" rows="4" class="form-control"></textarea>
+              </div>
+              <br>
+              <div class="text-center">
+                <button type="submit" class="btn btn-primary">Send</button>
+              </div>
+            </br>
+              <div class="status mt-3"></div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer><%- include('../partials/footer'); %></footer>
+</body>
+</html>

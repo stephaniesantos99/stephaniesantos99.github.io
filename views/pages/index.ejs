@@ -1,0 +1,34 @@
+<!-- Stephanie Santos | 301348833 | 01.27.2024 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('../partials/head'); %>
+  </head>
+  <body class="container">
+    <header><%- include('../partials/header'); %></header>
+
+    <main>
+      <div class="text-center">
+        <p class="fs-3"><%= content.welcomeMessage %></p></p>
+
+        <p class ="fs-2">
+          <img src="https://media.istockphoto.com/id/1283536918/vector/welcome-concept-flat-vector-foe-website-happy-tiny-people-are-near-huge-text-cartoon-office.jpg?s=612x612&w=0&k=20&c=FnUDYa-hy_gskwzy0B9K7HWhOB9U-CSGV1Lx6zyO8io=">
+        </p>
+        
+        <p class="fs-1">
+          <%= content.welcomeDescription %>
+        </p>
+        <p class ="fs-6">
+          <h1>Are you ready to dive in?</h1>
+        </p>
+        <a href="/about" class="btn btn-primary">About Me</a>
+        <p class="fs-4 mt-4">Mission</p>
+        <p class="fs-5">
+         <%= content.missionStatement %>
+        </p>
+      </div>
+    </main>
+
+    <footer><%- include('../partials/footer'); %></footer>
+  </body>
+</html>
